@@ -1,0 +1,33 @@
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+  "nome": "Capinha Silicone MagSafe",
+  "marca": "Apple",
+  "categoria": "Acessórios",
+  "descricao": "Capinha com imã para carregamento sem fio",
+  "preco": 149.90,
+  "estoque": 20
+}
+
+###
+
+GET http://localhost:8080/produtos
+
+###
+
+PUT http://localhost:8080/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Capinha Silicone MagSafe",
+  "marca": "Apple",
+  "categoria": "Acessórios",
+  "descricao": "Capinha com imã para carregamento sem fio",
+  "preco": 129.90,
+  "estoque": 15
+}
+
+###
+
+DELETE http://localhost:8080/produtos/1
